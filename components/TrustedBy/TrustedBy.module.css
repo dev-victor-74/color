@@ -1,0 +1,79 @@
+.trustedby{
+    width: 90%;
+    margin: 50px auto;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #fdfdff;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    border-radius: 10px;
+}
+.wrapper h1{
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(5, 2, 32);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.wrapper h1 span{
+    background-image: linear-gradient(to right, rgb(37, 4, 65), rgb(228, 23, 194));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.trustContainer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.trustbox{
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    background-color: #e6e4fc;
+    box-shadow: 1px 1px 1px #e9ebec;
+    border-radius: 5px;
+}
+.trustbox:hover{
+    background-color: #edf1f5;
+    transform: scale(1.02);
+}
+.trustlogo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    object-fit: cover;
+    border-radius: 50%;
+}
+.trustname{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.trustname h1{
+    font-size: 20px;
+    color: rgb(9, 2, 32);
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+

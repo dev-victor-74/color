@@ -1,0 +1,52 @@
+
+.toolbox{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 5px;
+    background-color: #e9e9f5; 
+    justify-content: center;
+    transition: all 1ms ease;
+    cursor: pointer;
+}
+.toolbox:hover{
+    transform: scale(1.01);
+    background-color: #b6b3d4;
+}
+.icon{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 50px;
+   height: 50px;
+   padding: 5px;
+   border-radius: 5px;
+   
+}
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.toolLink{
+    text-decoration: none;
+    color: #05050c;
+    font-weight: bold;
+}
+.toolLink h3{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: .5px;
+}
+
+@media screen and (max-width: 830px) {
+   .toolLink h3{
+    font-size: 11px;
+   }
+}
+@media screen and (max-width: 500px) {
+    .toolLink h3{
+     font-size: 12px;
+    }
+ }

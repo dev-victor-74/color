@@ -1,0 +1,85 @@
+.converterHeading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    border-radius: 15px;
+    background: #74afd6;
+    background: #c5456f; background-image: radial-gradient(at 5.0% 3.0%, hsl(81, 76%, 64%) 0px, transparent 50%),radial-gradient(at 6.0% 36.0%, hsl(95, 99%, 69%) 0px, transparent 50%),radial-gradient(at 70.0% 74.0%, hsl(140, 66%, 75%) 0px, transparent 50%),radial-gradient(at 95.0% 57.0%, hsl(340, 98%, 52%) 0px, transparent 50%),radial-gradient(at 66.0% 12.0%, hsl(267, 24%, 67%) 0px, transparent 50%),radial-gradient(at 3.0% 43.0%, hsl(0, 100%, 50%) 0px, transparent 50%),radial-gradient(at 72.0% 89.0%, hsl(0, 100%, 50%) 0px, transparent 50%),radial-gradient(at 63.0% 97.0%, hsl(0, 100%, 50%) 0px, transparent 50%),radial-gradient(at 54.0% 15.0%, hsl(0, 100%, 50%) 0px, transparent 50%),radial-gradient(at 12.0% 42.0%, hsl(0, 100%, 50%) 0px, transparent 50%);
+     /* background-image: radial-gradient(at 71.0% 52.0%, hsl(313, 92%, 41%) 0px, transparent 50%),radial-gradient(at 33.0% 18.0%, hsl(171, 53%, 56%) 0px, transparent 50%),radial-gradient(at 67.0% 90.0%, hsl(284, 74%, 64%) 0px, transparent 50%),radial-gradient(at 79.0% 55.0%, hsl(128, 58%, 51%) 0px, transparent 50%),radial-gradient(at 14.0% 86.0%, hsl(312, 98%, 45%) 0px, transparent 50%) */
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 55%;
+    gap: 20px;
+    padding: 10px;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    gap: 5px;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+    border-radius: 5px;
+    background-color: rgb(162, 162, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagedesc{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   gap: 10px;
+}
+.title h1{
+    font-size: 30px;
+    color: aliceblue;
+    font-weight: bold;
+    background-image: linear-gradient(to right, rgb(226, 223, 226), rgb(243, 241, 242));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.pagedesc p{
+    text-align: center;
+    color: #252525;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+
+@media screen and (max-width: 800px) {
+   .wrapper{
+    width: 90%;
+   }
+   .title h1{
+    font-size: 18px;
+   }
+   .pagedesc h1{
+    font-size: 18px;
+}
+}
+@media screen and (max-width: 600px) {
+   
+    .pagedesc h1{
+     font-size: 12px
+    };
+    }
+
+    /*background: #e49cee;
+     background-image: radial-gradient(at 43.0% 95.0%, hsl(149, 98%, 48%) 0px, transparent 50%),
+    radial-gradient(at 39.0% 78.0%, hsl(92, 18%, 59%) 0px, transparent 50%),
+    radial-gradient(at 25.0% 55.0%, hsl(325, 74%, 54%) 0px, transparent 50%),
+    radial-gradient(at 33.0% 9.0%, hsl(167, 86%, 49%) 0px, transparent 50%),
+    radial-gradient(at 27.0% 23.0%, hsl(338, 97%, 67%) 0px, transparent 50%)*/

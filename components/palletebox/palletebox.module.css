@@ -1,0 +1,37 @@
+.palletebox{
+    display: flex;
+    align-items: center;
+    height: 140px;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 4px;
+    background-color: #f1f0f0;
+}
+
+.pallete{
+    height: 100%;
+    width: 90px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pallete:active{
+    border: 1.5px solid rgb(75, 250, 75);
+}
+.pallete:hover{
+   width: 160px;
+}
+.pallete:hover .hexvalue{
+    display: flex;
+}
+
+.hexvalue{
+    font-weight:bold;
+    font-size: 14px;
+    letter-spacing: .5px;
+    text-align: center;
+    color: #1d1d1f;
+    text-transform: uppercase;
+    display: none;
+}

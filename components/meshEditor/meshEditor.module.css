@@ -1,0 +1,425 @@
+.meshEditor{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.cssModal{
+    position: absolute;
+    top: 100px;
+    right: 0;
+    left: 10px;
+    width: 600px;
+    z-index: 10;
+    height: 350px;
+    background-color: #e1e1fc;
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+}
+.cssModal textarea{
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  border: 2px solid #a2a2a3;
+  border-radius: 5px;
+  height: 280px;
+  overflow-y: auto;
+  background-color: inherit;
+  font-size: 12px;
+  line-height: 2;
+  font-weight: bold;
+  padding: 10px;
+  
+}
+.copy{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.copy button{
+    border: none;
+    outline: none;
+    padding: 12px 15px;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: .5px;
+    background-color: #2b2bee;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.copy button:active{
+    background-color: #4f4fdd;
+}
+.copy span{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border-radius: 50%;
+    background-color: #ebebf5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+}
+.colorControls{
+    min-width: 340px;
+    background-color: #e9e9f0;
+    height: 100%;
+    overflow-y: auto;
+    height: 600px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.bgcwrapper{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(172, 185, 253);
+    gap: 8px;
+    padding: 5px 2px;
+}
+.bgcwrapper span{
+    font-size: 11px;
+    font-weight: bold;
+}
+.bgc{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border: 1.5px solid rgb(53, 53, 228);
+    border-radius: 5px;
+    gap: 5px;
+}
+.bgc span{
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(76, 76, 82);
+    letter-spacing: .5px;
+}
+.bgc input[type="color"]{
+    border: none;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    height: 35px;
+    width: 30px;
+    cursor: pointer;
+}
+.bgc input[type="color"]::-webkit-color-swatch{
+  border-radius: 5px;
+}
+.colorArray{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.addColor{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    padding: 10px 5px;
+    border-bottom: 1px solid rgb(175, 210, 245);
+}
+.addColor span{
+    font-size: 11px;
+    font-weight: bold;
+    color: rgb(53, 52, 52);
+}
+.addColorContainer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.colorText{
+   display: flex;
+   align-items: center;
+   gap: 5px;
+   padding: 5px;
+   width: 80%;
+   border-radius: 5px;
+   border: 1.5px solid rgb(113, 113, 238);
+  
+}
+.colorText input[type="color"]{
+    border: none;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    height: 35px;
+    width: 30px;
+    cursor: pointer;
+}
+.colorText input[type="color"]::-webkit-color-swatch{
+    border-radius: 5px;
+  }
+.colorText span{
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    color: rgb(76, 76, 82);
+}
+.addColorBtn{
+    border: none;
+    outline: none;
+    padding: 12px 15px;
+    border-radius: 5px;
+    color: #fff;
+    background-color:  #2b2bee;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addColorBtn:active{
+    background-color: #4555eb;
+}
+.colorItemArray{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.colorItemArray h1{
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #011011;
+}
+.colorItemsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding-right: 3px;
+}
+.coloritem{
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #5d5df5;
+    cursor: move;
+}
+
+.coloritem .number{
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    padding: 3px;
+    font-size: 9px;
+    background-color: #3f3d6b;
+    color: rgb(218, 216, 216);
+    border-radius: 5px;
+    font-weight: bold;
+}
+.colorItemContent{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 90%;
+    justify-content: space-between;
+}
+.colorTextContent{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.colortxt{
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(43, 42, 42);
+}
+.colorinpt{
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 30px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.colorinpt::-webkit-color-swatch{
+    border-radius: 5px;
+}
+.Icon{
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7775ad;
+    cursor: pointer;
+}
+.Icon:active{
+    background-color: #6363dd;
+}
+.EraseIcon{
+    font-weight: bold;
+}
+
+/* PREVIEW */
+.preview{
+    width: 74%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px 5px;
+    position: relative;
+}
+
+.DownLoadModal{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    width: 70px;
+    height: 80px;
+    padding: 1px;
+    border-radius: 3px;
+    justify-content: center;
+    gap: 2px;
+    right: 5px;
+    top: 60px;
+    background-color: #03030f;
+}
+.DownLoadModal span{
+    cursor: pointer;
+    background-color: #1f1f38;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    font-size: 12px;
+}
+.DownLoadModal span:hover{
+    background-color: #363657 ;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 2px;
+    background-color: #f0f2f7;
+    box-shadow: 0 1px 1px 1px #cdcaf7;
+    gap: 15px;
+    padding-left: 20px;
+}
+.buttons button{
+   border: none;
+   padding: 13px 20px;
+   outline: none;
+   cursor: pointer;
+   border-radius: 25px;
+}
+.btn1{
+    background-color: #333ff3;
+    color: #06071f;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.btn1:active{
+    background-color: #7f7fe7;
+}
+.btn1 span{
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.btn2{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.btn2 span{
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn2 span:active{
+    font-weight: bold;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #d0d0fa;
+}
+.previewBox{
+    height: 90%;
+    background-color: #373650;
+    border-radius: 2px;
+}
+
+
+
+@media screen and (max-width: 740px) {
+
+    .buttons{
+        justify-content: space-between;
+        padding-right: 20px;
+    }
+    .colorControls{
+        min-width: 300px;
+    }
+    
+}
+@media screen and (max-width: 700px) {
+  .cssModal{
+    width: 550px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 615px) {
+    .cssModal{
+      width: 100%;
+      right: 0;
+      left: 0;
+    }
+  }
+@media screen and (max-width: 680px) {
+    .meshEditor{
+      flex-direction: column-reverse;
+    }
+    .preview{
+      width: 100%;
+    }
+    .previewBox{
+     width: 100%;
+     height: 350px;
+    }
+ }

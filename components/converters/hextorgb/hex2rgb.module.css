@@ -1,0 +1,143 @@
+.hex2Rgb{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+    gap: 10px;
+}
+.colorPreview{
+    height: 250px;
+    width: 98%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.colorWrapper{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    gap: 10px;
+}
+.colorbox{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+.hexcolor{
+    background-color: #d9e7f1;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 20px;
+}
+.hexcolor h1{
+    font-size: 16px;
+    font-weight: bold;
+    color: #050316;
+}
+.colorInput{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+    border: 3px solid #bebebe;
+    border-radius: 5px;
+    padding: 5px;
+}
+.colorInput input[type = "color"]{
+     height: 40px;
+     width: 35px;
+     border: none;
+     outline: none;
+     background-color: transparent;
+     -webkit-appearance: none;
+     appearance: none;
+     cursor: pointer;
+     -moz-appearance: none;
+}
+.colorInput input[type = "color"]::-webkit-color-swatch{
+    border-radius: 5px;
+}
+.colorInput span{
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: .5px;
+}
+.icon{
+    flex: .2;
+    margin: auto;
+    background-color: rgb(216, 237, 253);
+    height: 40px;
+    width: 25px;
+    padding: 4px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.rgbcolor{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    background-color: #d9e7f1;
+    border-radius: 5px;
+}
+.rgbcolor h1{
+    font-size: 16px;
+    font-weight: bold;
+}
+.convertedRGB{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.convertedRGB span{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #d8d8d8;
+    padding: 6px;
+    border-radius: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+.convertedRGB span:active{
+    background-color: #faf9f9;
+    border: 1px solid gray;
+}
+
+@media screen  and (max-width: 840px) {
+
+    .colorWrapper{
+        flex-direction: column;
+        gap:5px;
+    }
+    .rgbcolor{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .icon{
+        transform: rotateZ(90deg);
+    }
+    .hexcolor{
+        width: 100%;
+    }
+    .convertedRGB span{
+        font-size: 18px;
+    }
+}
+
+@media screen  and (max-width: 892px) {
+    .convertedRGB span{
+        font-size: 20px;
+    }
+}

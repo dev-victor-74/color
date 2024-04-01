@@ -1,0 +1,142 @@
+.heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px  auto;
+    padding: 10px 0px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.wdesc{
+    display: flex;
+    flex-direction: column;
+}
+.left h1{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0;
+    background-image: linear-gradient(to right, rgb(134, 25, 223), rgb(228, 23, 194));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.titlebox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.left span{
+    font-size: 13px;
+font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(39, 39, 39);
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.randomPallete{
+    border: none;
+    outline: none;
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #3251e9;
+}
+.randomPallete:active{
+    background-color: #3655f0;
+}
+.randomPallete span{
+    font-weight: bold;
+    font-size: 14px;
+    color: #e2e4e4;
+}
+.iconWrapper{
+    padding: 3px;
+    background-color: #8194e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 618px) {
+    .left h1{
+        font-size: 24px;
+        font-weight: bold;
+        color: #070a14;
+        padding: 0;
+    }
+    .left span{
+        color: #141725;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .randomPallete{
+        border: none;
+        outline: none;
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #0a2cee;
+    }
+    .left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .iconWrapper{
+        display: none;
+    }
+    
+}
+
+
+@media screen and (max-width: 400px) {
+    .heading{
+        margin: 10 auto;
+    }
+    .container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 10px;
+    }
+  
+    .left h1{
+        font-size: 24px;
+        font-weight: bold;
+        color: #070a14;
+        padding: 0;
+        text-align: center;
+    }
+    .left span{
+        color: #141725;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+    }
+}

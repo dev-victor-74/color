@@ -1,0 +1,23 @@
+.rgbToHex{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 550px) {
+    .container{
+        width: 90%;
+        margin-top: 10px;
+    }    
+}

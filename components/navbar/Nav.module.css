@@ -1,0 +1,143 @@
+.navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background-color: inherit;
+    background: linear-gradient(to right, #e9edf5, #e8e8f7);
+    box-shadow: 0px 2px 1px .5px rgb(211, 211, 248);
+
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 999;
+    padding: 10px 0;
+
+}
+.left{
+    display: flex;
+    align-items: center;
+    /* background-color: #030303; */
+    gap: 40px;
+}
+.left .logotext{
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #030303;
+    text-decoration: underline 5px solid rgb(8, 8, 207);
+    cursor: pointer;
+}
+.linkItems{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.linkItems span{
+    font-size: 13px;
+    color: #030303;
+    font-weight: bold;
+    letter-spacing: .5px;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+}
+.dropmenu{
+    display: none;
+    padding-right: 10px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.fries{
+    cursor: pointer;
+}
+.right span{
+    gap: 2px;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: .5px;
+    color: #030303;
+}
+.category{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.categoryopen{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #cacad6;
+}
+ .right .pro{
+    background-image: linear-gradient(to right, rgb(11, 11, 165), rgb(241, 52, 194));
+    padding: 12px 15px;
+    color: #f5f3f3;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+.cat{
+    margin-left: 4px;
+}
+
+.login{
+    padding: 12px 18px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: rgb(22, 22, 197);
+    letter-spacing: .5px;
+    color: #f5f2f2;
+    cursor: pointer;
+    outline: none;
+}
+
+
+
+@media screen and (max-width: 700px) {
+   .right{
+    gap: 10px;
+   }    
+   .right span{
+    font-size: 14px;
+   }
+   .login{
+    padding: 8px 10px;
+   }
+}
+@media screen and (max-width: 760px) {
+    .right{
+        display: none;
+    }
+    .dropmenu{
+        display: block;
+    }
+  }
+
+@media screen and (max-width: 500px) {
+   .cat{
+    display: none;
+   }
+ }
+ 

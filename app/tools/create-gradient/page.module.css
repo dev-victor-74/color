@@ -1,0 +1,10 @@
+.createGradient{
+    width: 95%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 760px) {
+   .createGradient{
+    width: 95%;
+   }
+}

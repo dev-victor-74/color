@@ -1,0 +1,10 @@
+.meshGradient{
+    width: 97%;
+    margin: 0  auto;
+}
+.meshEditorContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

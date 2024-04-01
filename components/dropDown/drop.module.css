@@ -1,0 +1,105 @@
+.dropdown{
+    position: absolute;
+    background-color: #fff;
+    top: 50px;
+    right: 220px;
+    display: flex;
+    align-items: center;
+    padding: 5px 5px;
+    width: 30%;
+    border-radius: 5px;
+    border: 1px solid rgb(218, 216, 216);
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    margin: 0 auto;    
+    flex-direction: column;
+}
+.dropItem{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    border-radius: 4px;
+    padding: 12px 12px;
+    background-color: #e3ecfc;
+    margin: 3px;
+    border: 1px solid #aba8ce;
+}
+.dropItem:hover{
+    background-color: #c7deec;
+    
+}
+.iconWrapper{
+    padding: 2px;
+    background-color: #b0bcf1;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+.dropItem:hover span{
+    color: rgb(27, 27, 27);
+}
+.url{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #05040e;
+}
+.url span{
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+@media  screen and (max-width:1250px) {
+
+    .dropdown{
+        width: 35%;
+    }
+    
+}
+@media  screen and (max-width:1050px) {
+
+    .dropdown{
+        width: 45%;
+    }
+    
+}
+@media  screen and (max-width:850px) {
+
+    .dropdown{
+        width: 55%;
+    }
+    
+}
+@media  screen and (max-width:700px) {
+
+    .dropdown{
+        width: 65%;
+        top: 50px;
+        right: 110px;
+    }
+    
+}
+@media  screen and (max-width:585px) {
+
+    .dropdown{
+        width: 85%;
+        top: 50px;
+        right: 40px;
+    }
+    
+}
+@media  screen and (max-width:500px) {
+
+    .dropdown{
+        width: 100%;
+        top: 50px;
+        right: 0px;
+    }
+    
+}

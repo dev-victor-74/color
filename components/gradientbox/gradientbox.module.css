@@ -1,0 +1,35 @@
+.gradientbox{
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 500ms ease;
+    background-color: #e2e4f8;
+    position: relative;
+    padding: 5px;
+}
+
+.gradientboxCopied{
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 500ms ease;
+    position: relative;
+    background-color: rgb(184, 184, 201);
+}
+
+.previewbox{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    transition: all .5s ease;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.gradientbox:hover{
+    transform: scale(1.001);
+}
