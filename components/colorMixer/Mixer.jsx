@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react'
 import style from './mixer.module.css'
-import chroma from 'chroma-js';
 
 const Mixer = () => {
 
