@@ -19,7 +19,6 @@ const Header = () => {
                <p>Inspire Your Creative Journey, Craft Colors with Ease</p>
              </div>
              <div className={style.buttons}>
-                 <Link href="/tools/gradient" className={style.btn1}>Get Started for free</Link>
                  <Link href="/tools/gradient" className={style.btn2}>Browse Gradients</Link>
             </div>
           </div>

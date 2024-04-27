@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import style from "./tool.module.css"
 import Link from 'next/link'
@@ -5,7 +7,7 @@ import Link from 'next/link'
 const ToolBox = ({Icon, url, title, color}) => {
 
   return (
-    <div className={style.toolbox}>
+    <Link href={url} className={style.toolbox}>
         <div className={style.icon} style={{backgroundColor: color}}>
              {Icon}
         </div>
@@ -14,7 +16,7 @@ const ToolBox = ({Icon, url, title, color}) => {
               <h3>{title}</h3>
             </Link>
         </div>
-    </div>
+    </Link>
   )
 }
 

@@ -27,7 +27,7 @@ const NavBar = () => {
                  <span>Palettes</span>
               </Link>
                <Link href="/">
-                 <span>Random Palettes</span>
+                 <span>Mesh</span>
               </Link>
               <Link href="/">
                  <span>Gradients</span>
@@ -41,10 +41,10 @@ const NavBar = () => {
                    <span>Tools</span>
                    <BiChevronDown size={18} color='#030303'/>
                  </div>
-                 <span className={style.pro}>Upgrade
+                 {/* <span className={style.pro}>Upgrade
                    <GiElectric size={16} color='lime'/>
                  </span>
-                 <button className={style.login}>Sign up</button>
+                 <button className={style.login}>Sign up</button> */}
              </div>
          </div>
              {

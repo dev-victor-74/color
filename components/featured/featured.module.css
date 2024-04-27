@@ -7,12 +7,12 @@
 }
 .wrapper{
     gap: 15px;
-    width: 75%;
+    width: 80%;
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #f6f7f8;
     padding: 10px 15px 15px 15px;
     border-radius: 10px;
 }
